@@ -28,6 +28,7 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  border-top-left-radius: 0px;
 }
 
 .row {
@@ -36,10 +37,20 @@ textarea {
   border-top: 1px solid white;
 }
 
-.hour {
+.col-1.hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed darkgrey;
+  border-right: 3px solid darkgray;
+  text-align: end;
+}
+
+.col-10.event {
+  color: #000000;
+}
+
+.col-1.save {
+  border-left: 3px solid darkgrey;
 }
 
 .past {
@@ -69,3 +80,4 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
