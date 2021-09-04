@@ -37,20 +37,10 @@ textarea {
   border-top: 1px solid white;
 }
 
-.col-1.hour {
+.hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed darkgrey;
-  border-right: 3px solid darkgray;
-  text-align: end;
-}
-
-.col-10.event {
-  color: #000000;
-}
-
-.col-1.save {
-  border-left: 3px solid darkgrey;
+  border-top: 1px dashed #000000;
 }
 
 .past {
