@@ -39,7 +39,6 @@ $(".time-block").each(function() {
   function ppf() {
     $(".time-block").each(function() {
       var currentTime = moment().format("HH");
-      hours.join();
 
       if (currentTime < hours.join()) {
         $(this).addClass("past")
