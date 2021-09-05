@@ -10,16 +10,13 @@ var five = $("#5");
 
 var hours = [nine, ten, eleven, twelve, one, two, three, four, five];
 
-// To Display Date at Top of Page
-var date = moment().format("dddd, MMMM do");
-$("#currentDay").text(date);
+var time = $(this).parent().attr("id");
+var task = $(this).siblings(".task").val();
 
-// To update the text-area with data from local storage
-$(".time-block").each(function() {
-    var blockId = $(this).attr("id");
-// Load saved data from local storage
-    $("#" + blockId + " textarea").text(localStorage.getItem(moment().format("DDDYYYY") + blockId));
-  });
+
+// To Display Date at Top of Page
+var date = moment().format("dddd-MMMM do");
+$("#currentDay").text(date);
 
 // To Add On-Click for the Save Button
 var save = $(".save");
@@ -28,12 +25,15 @@ save.on("click", saveItem);
 // To Run Save Event
 function saveItem(e) {
     e.preventDefault();
-    var time = $(this).parent().attr("id");
-    var task = $(this).siblings(".task").val();
-
     localStorage.setItem(time, task);
 };
 
+// To update the text-area with data from local storage
+$(".time-block").each(function() {
+  var blockId = $(this).attr("id");
+// Load saved data from local storage
+  $("#" + blockId + " textarea").text(localStorage.getItem(time, task));
+});
 
 // To set Past, Present, or Future
   function ppf() {
