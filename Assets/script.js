@@ -38,12 +38,12 @@ $(".time-block").each(function() {
 // To set Past, Present, or Future
   function ppf() {
     $(".time-block").each(function() {
-      var currentTime = moment().format("HH");
+      var currentTime = moment().format("h");
 
-      if (currentTime < (hours.toString())) {
+      if (currentTime < hours) {
         $(this).addClass("past")
       }
-      else if (currentTime === (hours.toString())) {
+      else if (currentTime === hours) {
         $(this).addClass("present")
       }
       else {
