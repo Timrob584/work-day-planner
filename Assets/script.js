@@ -13,7 +13,6 @@ var hours = [nine, ten, eleven, twelve, one, two, three, four, five];
 var time = $(this).parent().attr("id");
 var task = $(this).siblings(".task").val();
 
-
 // To Display Date at Top of Page
 var date = moment().format("dddd MMMM do");
 $("#currentDay").text(date);
@@ -38,7 +37,7 @@ $(".time-block").each(function() {
 // To set Past, Present, or Future
   function ppf() {
     $(".time-block").each(function() {
-      var currentTime = moment().format("h");
+      var currentTime = moment().format("h")
 
       if (currentTime < hours) {
         $(this).addClass("past")
