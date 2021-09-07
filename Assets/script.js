@@ -40,10 +40,10 @@ $(".time-block").each(function() {
     $(".time-block").each(function() {
       var currentTime = moment().format("HH");
 
-      if (currentTime < hours.join()) {
+      if (currentTime < (hours.toString())) {
         $(this).addClass("past")
       }
-      else if (currentTime === hours.join()) {
+      else if (currentTime === (hours.toString())) {
         $(this).addClass("present")
       }
       else {
