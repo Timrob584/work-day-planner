@@ -2,7 +2,7 @@
 A functional day planner to help organize all of your tasks through the day.
 
 ## Demo
-![Screenshot of Planner](Assets\images\blank-planner.png)
+![Screenshot of Planner](Assets/images/blank-planner.png)
 
 ## How to Use
 1. Go to the link https://timrob584.github.io/work-day-planner/
